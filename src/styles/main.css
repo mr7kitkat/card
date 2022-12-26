@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pageBg: #23252c;
+  --cardBg: #f5f5f5;
+
+  --font: "Inter", sans-serif;
+  --headingColor: #2b283a;
+  --websiteColor: #4a4e74;
+
+  --EmailBtnColor: #374151;
+  --LinkedInBtnColor: #5093e2;
+
+  --deginationFontColor: #f3bf99;
+  --subHeadingColod: #2b283a;
+  --descriptionColor: #4a4e74;
+
+  --socialBtnColor: #918e9b;
+
+  --cardFooter: #d5d4d8;
+
+  --cardWidth: 317px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --pageBg: #23252c;
+    --cardBg: #1a1b21;
+
+    --font: "Inter", sans-serif;
+    --headingColor: #ffffff;
+
+    --websiteColor: #f5f5f5;
+    --EmailBtnColor: #374151;
+    --LinkedInBtnColor: #5093e2;
+
+    --deginationFontColor: #f3bf99;
+    --subHeadingColod: #f5f5f5;
+    --descriptionColor: #dcdcdc;
+
+    --socialBtnColor: #918e9b;
+    --cardFooter: #161619;
+  }
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font);
+
+  background-color: var(--pageBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  max-width: var(--cardWidth);
+
+  border-radius: 1rem;
+  overflow: hidden;
+
+  background-color: var(--cardBg);
+}
+
+/* Image containor styling */
+.image-containor img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Content Body Style */
+.content {
+  padding: 22px 34px;
+  height: 360px;
+}
+
+.row-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading */
+.heading {
+  flex-direction: column;
+}
+
+.name {
+  font-size: 25px;
+  color: var(--headingColor);
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.designation {
+  font-size: 12.8px;
+  color: var(--deginationFontColor);
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.url {
+  font-size: 10.24px;
+  color: var(--websiteColor);
+  line-height: 150%;
+  font-weight: 400;
+}
+
+/* Contact Button Style */
+.contact {
+  justify-content: space-between;
+  margin: 16px auto;
+}
+.contactBtn {
+  height: 34px;
+  width: 115px;
+  border-radius: 6px;
+  padding: 9px 13px 9px 11px;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: var(--EmailBtnColor);
+  border: none;
+  outline: none;
+}
+
+.linkedin {
+  background-color: var(--LinkedInBtnColor);
+  color: white;
+  border: none;
+}
+
+.contactBtn img {
+  height: 16px;
+  width: 16px;
+}
+
+.contactBtn span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+/* Information styling */
+
+.info {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+}
+
+.section-head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--subHeadingColod);
+}
+
+.section-detail {
+  font-size: 10.24px;
+  font-weight: 400;
+  line-height: 15.36px;
+  color: var(--descriptionColor);
+}
+
+/* Styles for FOOTER section */
+.footer {
+  width: 100%;
+  background-color: var(--cardFooter);
+  height: 64px;
+}
+
+.links {
+  width: 50%;
+  justify-content: space-evenly;
+}
